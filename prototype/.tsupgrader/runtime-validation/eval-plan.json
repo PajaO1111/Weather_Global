@@ -1,0 +1,51 @@
+{
+  "projectType": "webapp",
+  "setup": [],
+  "assertions": [
+    {
+      "name": "astro-build",
+      "kind": "process",
+      "command": "npm",
+      "args": ["run", "build"],
+      "verificationMethod": "exit-code",
+      "expected": "0",
+      "timeoutSeconds": 120
+    },
+    {
+      "name": "tests-pass",
+      "kind": "process",
+      "command": "npm",
+      "args": ["test"],
+      "verificationMethod": "test-results",
+      "expected": "0",
+      "timeoutSeconds": 120
+    },
+    {
+      "name": "home-page-200",
+      "kind": "process",
+      "command": "node",
+      "args": ["-e", "const r=await fetch('http://127.0.0.1:4174/weather_global/'); console.log('HTTP',r.status); if(r.status!==200)process.exit(1)"],
+      "verificationMethod": "exit-code",
+      "expected": "0",
+      "timeoutSeconds": 60
+    },
+    {
+      "name": "validated-api-200",
+      "kind": "process",
+      "command": "node",
+      "args": ["-e", "const r=await fetch('http://127.0.0.1:4174/weather_global/api.php?dataset=climate'); console.log('HTTP',r.status); if(r.status!==200)process.exit(1)"],
+      "verificationMethod": "exit-code",
+      "expected": "0",
+      "timeoutSeconds": 60
+    },
+    {
+      "name": "cron-remains-disabled",
+      "kind": "process",
+      "command": "node",
+      "args": ["-e", "const r=await fetch('http://127.0.0.1:4174/weather_global/cron.php'); console.log('HTTP',r.status); if(r.status!==503)process.exit(1)"],
+      "verificationMethod": "exit-code",
+      "expected": "0",
+      "timeoutSeconds": 60
+    }
+  ]
+}

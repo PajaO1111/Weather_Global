@@ -1,0 +1,205 @@
+{
+  "planHash": "37759f5b19579e2ecd972e0396fd1dc551912cfc18788852dee7c34efe654c07",
+  "phase": "standalone",
+  "recordedAtUtc": "2026-11-07T12:23:03.4203261Z",
+  "retryCount": 0,
+  "resetBaseline": false,
+  "complete": true,
+  "result": {
+    "setupSucceeded": true,
+    "setupDurationMs": 0,
+    "setupFailureOutput": null,
+    "assertions": [
+      {
+        "name": "astro-build",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "npm warn Unknown env config \u0022scripts-prepend-node-path\u0022. This will stop working in the next major version of npm. See \u0060npm help npmrc\u0060 for supported config options.\r\n\r\n\u003E weather-global@0.1.0 build\r\n\u003E astro build\r\n\r\n\u001B[2m13:22:56\u001B[22m \u001B[34m[types]\u001B[39m Generated \u001B[2m51ms\u001B[22m\r\n\u001B[2m13:22:56\u001B[22m \u001B[34m[build]\u001B[39m output: \u001B[34m\u0022static\u0022\u001B[39m\r\n\u001B[2m13:22:56\u001B[22m \u001B[34m[build]\u001B[39m mode: \u001B[34m\u0022static\u0022\u001B[39m\r\n\u001B[2m13:22:56\u001B[22m \u001B[34m[build]\u001B[39m directory: \u001B[34mX:\\Weather_Global\\prototype\\dist\\\u001B[39m\r\n\u001B[2m13:22:56\u001B[22m \u001B[34m[build]\u001B[39m Collecting build info...\r\n\u001B[2m13:22:56\u001B[22m \u001B[34m[build]\u001B[39m \u001B[32m\u2713 Completed in 63ms.\u001B[39m\r\n\u001B[2m13:22:56\u001B[22m \u001B[34m[build]\u001B[39m Building static entrypoints...\r\n\u001B[2m13:22:56\u001B[22m \u001B[34m[vite]\u001B[39m \u001B[32m\u2713 built in 137ms\u001B[39m\r\n\u001B[33m\u001B[1m13:22:57\u001B[22m [WARN] [vite]\u001B[39m \u001B[33m[plugin builtin:vite-reporter] \r\n(!) Some chunks are larger than 500 kB after minification. Consider:\r\n- Using dynamic import() to code-split the application\r\n- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting\r\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001B[39m\r\n\u001B[2m13:22:57\u001B[22m \u001B[34m[vite]\u001B[39m \u001B[32m\u2713 built in 254ms\u001B[39m\r\n\u001B[2m13:22:57\u001B[22m \u001B[34m[build]\u001B[39m Rearranging server assets...\r\n\r\n\u001B[42m\u001B[30m generating static routes \u001B[39m\u001B[49m\r\n\u001B[2m13:22:57\u001B[22m   \u001B[34m\u251C\u2500\u001B[39m \u001B[2m/index.html\u001B[22m \u001B[2m(\u002B8ms)\u001B[22m \r\n\u001B[2m13:22:57\u001B[22m \u001B[32m\u2713 Completed in 17ms.\r\n\u001B[39m\r\n\u001B[2m13:22:57\u001B[22m \u001B[34m[build]\u001B[39m \u001B[32m\u2713 Completed in 453ms.\u001B[39m\r\n\u001B[2m13:22:57\u001B[22m \u001B[34m[build]\u001B[39m 1 page(s) built in \u001B[1m545ms\u001B[22m\r\n\u001B[2m13:22:57\u001B[22m \u001B[34m[build]\u001B[39m \u001B[1mComplete!\u001B[22m\r\n",
+        "durationMs": 1972
+      },
+      {
+        "name": "tests-pass",
+        "kind": "process",
+        "verificationMethod": "test-results",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "npm warn Unknown env config \u0022scripts-prepend-node-path\u0022. This will stop working in the next major version of npm. See \u0060npm help npmrc\u0060 for supported config options.\r\n\r\n\u003E weather-global@0.1.0 test\r\n\u003E npm run test:js \u0026\u0026 npm run test:php\r\n\r\nnpm warn Unknown env config \u0022scripts-prepend-node-path\u0022. This will stop working in the next major version of npm. See \u0060npm help npmrc\u0060 for supported config options.\r\n\r\n\u003E weather-global@0.1.0 test:js\r\n\u003E node --test tests/*.test.mjs\r\n\r\n\u2714 7D archive bounds reject empty and excessive bodies (34.277ms)\r\n\u2714 7D source list includes all 24 sea ice CSVs with unique bounded public requests (0.6932ms)\r\n\u2714 7D evidence registry preserves gates rather than treating HTTP 200 as numerical validation (14.8151ms)\r\n\u2714 gas API serves verified NOAA concentration bundle and bodyless HEAD (139.8312ms)\r\n\u2714 gas API fails closed when catalogue or source product is corrupt (18.8932ms)\r\n\u2714 NOAA monthly gases preserve complete axes, average/trend fields, and uncertainty sentinels (14.6582ms)\r\n\u2714 gas source parser rejects malformed, discontinuous, and altered-coverage inputs (8.4009ms)\r\n\u2714 local gas bundle and catalogue are complete, versioned, and unpublished (7.1896ms)\r\n\u2714 carbon-budget API serves only the integrity-checked local GCB bundle (280.8436ms)\r\n\u2714 carbon-budget API fails closed when the data bundle is corrupted (19.6574ms)\r\n\u2714 GCB v1.0 workbook reader extracts exact tables and keeps blank cells null (180.9895ms)\r\n\u2714 GCB views retain different coverage, missing values, units, and source-provided model results (1004.3316ms)\r\n\u2714 GCB catalogue pins the exact checked bundle bytes and forbids public release (41.3114ms)\r\n\u2714 GCB v1.0 adds model-by-model global component estimates with source gaps (666.425ms)\r\n\u2714 national fossil product keeps country, world, consumption and transfer series separate (419.4081ms)\r\n\u2714 national land-use product keeps BLUE, OSCAR and LUCE country estimates independent (353.139ms)\r\n\u2714 EU27 preview contains nine independent selections and 1674 Celsius points (4.5552ms)\r\n\u2714 preview rejects missing years, non-finite values, wrong units and hidden rebasing (4.0371ms)\r\n\u2714 every main chart has bilingual description, source, limitations and separate glossary (4.9553ms)\r\n\u2714 scenario families and uncertainty explanations remain product-specific (1.9036ms)\r\n\u2714 chart explanation renders a localized description and its own glossary (1.4726ms)\r\n\u2714 chart explanation escapes content and rejects incomplete localization (0.7904ms)\r\n\u2714 the API contract continues to accept the current two-model release (2.8606ms)\r\n\u2714 the API contract accepts complete historical and four-scenario ranges (1.5942ms)\r\n\u2714 legacy snapshots remain valid until a 7A release is published (0.1906ms)\r\n\u2714 the API contract validates complete native-cadence ocean series (9.1265ms)\r\n\u2714 older ocean payloads remain valid when provider license URLs are absent (4.1064ms)\r\n\u2714 the API contract rejects missing periods, sentinels, and malformed ocean schema (10.9388ms)\r\n\u2714 the API contract rejects missing years and malformed model ranges (0.8649ms)\r\n\u2714 CMIP6 comparison validates two complete models and five exact min/max series (6.1256ms)\r\n\u2714 CMIP6 comparison rejects changing model count, corrupted ranges and wrong scientific identity (4.6469ms)\r\n\u2714 calendar timeline includes every month, including year boundaries and leap years (2.3505ms)\r\n\u2714 calendar timeline rejects malformed and reversed periods (0.7307ms)\r\n\u2714 shared period uses first and last valid observations, not missing boundary rows (1.4712ms)\r\n\u2714 shared period is absent when a series has no valid values or ranges do not overlap (0.2911ms)\r\n\u2714 series values align by month and preserve nulls for missing months (0.3756ms)\r\n\u2714 verification checks exact bytes, pinned checksum, shape, and catalogue identity (60.4789ms)\r\n\u2714 API verifier accepts the current real generated artifacts and dynamic draft checksum (70.9824ms)\r\n\u2714 default API readers serve the real generated catalogue and bundle (195.5215ms)\r\n\u2714 middleware serves only loopback GET/HEAD allowlisted endpoints without caching (107.3365ms)\r\n\u2714 missing and corrupt artifacts fa\n\u2026[truncated]",
+        "durationMs": 5656,
+        "testResults": {
+          "testFramework": "unknown",
+          "runnerDetectedFrom": "none",
+          "testsTotal": 0,
+          "testsPassed": 0,
+          "testsFailed": 0,
+          "testsSkipped": 0,
+          "parseFailed": true
+        }
+      },
+      {
+        "name": "home-page-200",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "HTTP 200\r\n",
+        "durationMs": 172
+      },
+      {
+        "name": "validated-api-200",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "HTTP 200\r\n",
+        "durationMs": 173
+      },
+      {
+        "name": "cron-remains-disabled",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "HTTP 503\r\n",
+        "durationMs": 174
+      }
+    ],
+    "executions": [
+      {
+        "source": "astro-build",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "args": [
+          "run",
+          "build"
+        ],
+        "cwd": "X:\\Weather_Global\\prototype",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32",
+        "nodeExecutable": "C:\\Program Files\\nodejs\\node.EXE",
+        "nodeVersion": "v24.22.2",
+        "packageManager": "npm",
+        "packageManagerExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "packageManagerVersion": "11.19.1",
+        "cleanup": {
+          "RootProcessId": 41876,
+          "Completed": true,
+          "ProcessesObserved": 13,
+          "ProcessesTerminated": 1,
+          "Failure": null
+        }
+      },
+      {
+        "source": "tests-pass",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "args": [
+          "test"
+        ],
+        "cwd": "X:\\Weather_Global\\prototype",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32",
+        "nodeExecutable": "C:\\Program Files\\nodejs\\node.EXE",
+        "nodeVersion": "v24.22.2",
+        "packageManager": "npm",
+        "packageManagerExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "packageManagerVersion": "11.19.1",
+        "cleanup": {
+          "RootProcessId": 42532,
+          "Completed": true,
+          "ProcessesObserved": 66,
+          "ProcessesTerminated": 1,
+          "Failure": null
+        }
+      },
+      {
+        "source": "home-page-200",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\node.EXE",
+        "args": [
+          "-e",
+          "const r=await fetch(\u0027http://127.0.0.1:4174/weather_global/\u0027); console.log(\u0027HTTP\u0027,r.status); if(r.status!==200)process.exit(1)"
+        ],
+        "cwd": "X:\\Weather_Global\\prototype",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32",
+        "nodeExecutable": null,
+        "nodeVersion": null,
+        "packageManager": null,
+        "packageManagerExecutable": null,
+        "packageManagerVersion": null,
+        "cleanup": {
+          "RootProcessId": 18632,
+          "Completed": true,
+          "ProcessesObserved": 2,
+          "ProcessesTerminated": 1,
+          "Failure": null
+        }
+      },
+      {
+        "source": "validated-api-200",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\node.EXE",
+        "args": [
+          "-e",
+          "const r=await fetch(\u0027http://127.0.0.1:4174/weather_global/api.php?dataset=climate\u0027); console.log(\u0027HTTP\u0027,r.status); if(r.status!==200)process.exit(1)"
+        ],
+        "cwd": "X:\\Weather_Global\\prototype",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32",
+        "nodeExecutable": null,
+        "nodeVersion": null,
+        "packageManager": null,
+        "packageManagerExecutable": null,
+        "packageManagerVersion": null,
+        "cleanup": {
+          "RootProcessId": 1116,
+          "Completed": true,
+          "ProcessesObserved": 2,
+          "ProcessesTerminated": 1,
+          "Failure": null
+        }
+      },
+      {
+        "source": "cron-remains-disabled",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\node.EXE",
+        "args": [
+          "-e",
+          "const r=await fetch(\u0027http://127.0.0.1:4174/weather_global/cron.php\u0027); console.log(\u0027HTTP\u0027,r.status); if(r.status!==503)process.exit(1)"
+        ],
+        "cwd": "X:\\Weather_Global\\prototype",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32",
+        "nodeExecutable": null,
+        "nodeVersion": null,
+        "packageManager": null,
+        "packageManagerExecutable": null,
+        "packageManagerVersion": null,
+        "cleanup": {
+          "RootProcessId": 21888,
+          "Completed": true,
+          "ProcessesObserved": 2,
+          "ProcessesTerminated": 1,
+          "Failure": null
+        }
+      }
+    ]
+  }
+}

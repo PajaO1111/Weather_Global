@@ -1,0 +1,7 @@
+node_modules/
+.astro/
+dist/
+backend/private/storage/
+backend/private/config.php
+.tsupgrader/runtime-validation/node_modules/
+.tsupgrader/runtime-validation/test-results/

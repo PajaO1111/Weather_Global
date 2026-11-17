@@ -1,0 +1,22 @@
+.env
+.env.*
+
+!.env.example
+/config.php
+/storage/
+/vendor/
+/zaloha/
+/doc/
+/node_modules/
+/data_samples/
+# Ignore VS Code SFTP configuration
+.vscode/
+
+# Podklady a ostatní dokumentace zůstávají lokálně; vybrané dokumenty se verzují.
+*.pdf
+*.md
+*.txt
+!README.md
+!implementace.md
+!clanek_cz.md
+!clanek_cz_ver1.md

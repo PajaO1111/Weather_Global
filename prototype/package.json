@@ -1,0 +1,19 @@
+{
+  "name": "weather-global",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "astro build",
+    "dev": "node scripts/dev.mjs",
+    "test": "npm run test:js && npm run test:php",
+    "test:js": "node --test tests/*.test.mjs",
+    "test:php": "php backend/private/tests/run.php"
+  },
+  "dependencies": {
+    "echarts": "6.1.0"
+  },
+  "devDependencies": {
+    "astro": "7.4.5"
+  }
+}

@@ -1,0 +1,75 @@
+---
+/* ====================================================
+   CLIMATE ATLAS PAGE
+   Provides the accessible static shell for the interactive atlas.
+   ==================================================== */
+const base = import.meta.env.BASE_URL;
+---
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Weather Global — klimatický atlas s historickými indikátory, podmíněnými projekcemi, zdroji a metodikou."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#0a111c" />
+    <title>Weather Global — Climate Atlas</title>
+    <link rel="stylesheet" href={`${base}styles.css`} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Přejít na obsah / Skip to content</a>
+    <header class="app-header">
+      <div class="header-inner">
+        <a class="brand" href="#overview" aria-label="Weather Global">
+          <svg viewBox="0 0 40 40" width="38" height="38" aria-hidden="true">
+            <circle cx="20" cy="20" r="16" fill="none" stroke="currentColor" />
+            <ellipse cx="20" cy="20" rx="8" ry="16" fill="none" stroke="currentColor" />
+            <path d="M5 14h30M4 25h32M20 4v32" fill="none" stroke="currentColor" />
+            <circle cx="32" cy="11" r="3" fill="currentColor" />
+          </svg>
+          <span>WEATHER <strong>GLOBAL</strong><small>CLIMATE ATLAS / 01</small></span>
+        </a>
+        <nav aria-label="Main / Hlavní" id="navigation"></nav>
+        <div class="language-switch" role="group" aria-label="Language / Jazyk">
+          <button type="button" data-lang="cs" aria-pressed="true" lang="cs">CZ</button>
+          <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+        </div>
+        <button type="button" id="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu</button>
+      </div>
+    </header>
+    <div class="data-status-banner" id="data-status-banner">
+      Weather Global · načítání posledního validovaného datového balíčku
+    </div>
+    <main id="main" tabindex="-1">
+      <div id="section-navigation"></div>
+      <p role="status" id="loading">Načítání ověřených dat / Loading validated data…</p>
+      <div id="content"></div>
+      <noscript>
+        <section class="panel">
+          <h1>Weather Global — Climate Atlas</h1>
+          <p>
+            Interaktivní grafy vyžadují JavaScript. / Interactive charts require JavaScript.
+          </p>
+          <p>
+            NOAA CO₂ · NASA GISTEMP · NOAA CPC RONI · IPCC Atlas / CMIP6
+          </p>
+          <p>
+            Stránka nezobrazuje živá měření. / This page does not display live measurements.
+          </p>
+        </section>
+      </noscript>
+    </main>
+    <footer class="app-footer">
+      <span>WEATHER GLOBAL <span aria-hidden="true">/</span> CLIMATE ATLAS</span>
+      <p id="footer-copy">Nezávislý nekomerční projekt / Independent non-commercial project</p>
+      <a href="#sources" id="footer-link">Metodika a zdroje / Methods &amp; sources</a>
+      {import.meta.env.PROD && <a href={`${import.meta.env.BASE_URL}attribution.txt`}>Citace a licence / Attribution and licences</a>}
+    </footer>
+    <script>
+      import '../app.js';
+    </script>
+  </body>
+</html>
